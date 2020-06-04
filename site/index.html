@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Explore</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css">
@@ -24,56 +25,273 @@
 
     <div id="container">
 
-        
-            <header>
-                <section id="start_adventure">
-                    <div id="headerTop">
-                        <div id="contact">+123 4567 8900</div>
-                    </div>
-                    <div id="headerBottom">
-                        <div id="logo">
-                            <img src="img/Exploore.png" id="Exploore" alt="exploore"> <br>
-                            <img src="img/creative tagline here.png" id="tagline" alt="tagline">
+
+        <header>
+            <section id="start_adventure">
+                <div id="headerTop">
+                    <div id="contact">
+                        <div id="header_phone"><img src="img/phone.png" alt="phone">
+                            +123 4567 8900</div>
+                        <div id="header_mail"><img src="img/mail.jpg" alt="">
+                            free@psdfreebies.com</div>
+                        <div id="contacts"><i class="fab fa-facebook-f yellow"></i><i
+                                class="fab fa-google-plus-g  yellow"></i><i class="fab fa-vk  yellow"></i><i
+                                class="fab fa-youtube  yellow"></i>
+                            <div id="sign_up" class="floatRight">
+                                <img src="img/signup_header.png" alt="">
+                                Sign Up
+                            </div>
+                            <div id="login" class="floatRight">
+                                <img src="img/login_header.png" alt="">
+                                Login
+                            </div>
                         </div>
-                            <nav>
-                                <ul>
-                                    <!-- <li><a href="#">home</a></li>
-                                    <li><a href="#">home</a></li>
-                                    <li><a href="#">home</a></li>
-                                    <li><a href="#">home</a></li> -->
-                                </ul>
-                            </nav>
                     </div>
-                </section>
-            </header>
-        
+
+                </div>
+                <div id="headerBottom">
+                    <div id="logo">
+                        <nav>
+                            <ul>
+                                <li><a href="#start_adventure">HOME</a></li>
+                                <li><a href="#find-hotels">DESTINATION</a></li>
+                                <li><a href="#">DISCOUNT</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                        <img src="img/Exploore.png" id="Exploore" alt="exploore"> <br>
+                        <img src="img/creative tagline here.png" id="tagline" alt="tagline">
+
+                    </div>
+
+                </div>
+                <div id="adventure">
+                    <h1>Start Your Greatest</h1>
+                    <h3>ADVENTURE WITH US!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae reprehenderit dolorem,
+                        <br> incidunt repudiandae dolorum totam rerum impedit vitae doloremque.</p>
+                    <button class="btn">Click Here</button>
+                </div>
+            </section>
+        </header>
+
         <main>
             <article id="startPhoto"></article>
-           
-            <article id="find-hotels"></article>
-           
-            <article id="about">
 
-                <img src="../site/img/train.png" alt="train" id="left">
-                <img src="../site/img/BG.png" alt="berg" id="right">
+            <article id="find-hotels">
+                <h1>Find Hotels</h1>
+                <div id="filterFields" style="display:flex">
+
+                    <div class="filterField b-20 s-100 xs-100">
+                      <label style="display: block;" for="location" >Where?</label>
+                      <input type="text" name="location" placeholder="Location" style="margin-left: -2px;">
+                    </div>
+                    <div class="filterField b-20 s-50 xs-100">
+                      <label style="display: block;" for="location">Where?</label>
+                      <input type="date" name="location" placeholder="Location" style="margin-left: -2px;">
+                    </div>
+                    <div class="filterField b-20 s-50 xs-100">
+                      <label style="display: block;" for="location">Where?</label>
+                      <input type="date" name="location" placeholder="Location" style="margin-left: -2px;">
+                    </div>
+                    <div class="filterField b-20 s-50 xs-100">
+                      <label style="display: block;" for="location">Where?</label>
+                      <input type="number" name="location" placeholder="01" style="margin-left: -2px;">
+                    </div>
+                    <div class="filterField b-20 s-50 xs-100">
+                      <label style="display: block;" for="location">Where?</label>
+                      <input type="number" name="location" placeholder="00" style="margin-left: -2px;">
+                    </div>
+                    <button class="btn" style="background-color: black; color:white; margin-left: 15px; align-self: center; margin-top: 20px;">Click
+                        here</button>
+                  </div>
+                  
+            </article>
+            <div class="nextELement"></div>
+    <div class="nextELement"></div>
+            <!-- <article id="find-hotels">
+                <h1>Find hotels</h1>
+                <div class="row">
+                    <label for="where">Where?</label>
+                    <label for="checkin">Check in</label>
+                    <label for="checkout">Check out</label>
+                    <label for="Adult">Adult</label>
+                    <label for="Child">child</label>
+                </div>
+                <div class="row">
+
+                    <input type="text" class="s-100 " name="where" placeholder="Location" id="">
+                    <input type="date" class="s-50" name="checkin" id="">
+                    <input type="date" class="s-50" name="checkout" id="">
+                    <input type="number" class="s-50" name="adult" placeholder="01" id="">
+                    <input type="number" class="s-50" name="child" placeholder="00" id="">
+                    <button class="btn" style="background-color: black; color:white; margin-left: 15px;">Click
+                        here</button>
+                </div>
+                <div class="nextELement"></div>
+                <div class="nextELement"></div>
+            </article> -->
+
+            <article id="about">
+                <div class="floatRight">
+                    <h1>Trusted Since 2001 <br> We are Exploore</h1>
+                    <div style="margin-bottom: 46px;">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. In deleniti <br> obcaecati corporis
+                        distinctio odit debitis similique amet modi blanditiis
+                    </div>
+                    <div class="about">
+                        <div><img src="img/chechmark.png" alt="check"></div>
+                        <div><img src="img/chechmark.png" alt="check"></div>
+                        <div><img src="img/chechmark.png" alt="check"></div>
+                    </div>
+                    <div class="about">
+                        <div class="trustedCheck">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do
+                        </div>
+                        <div class="trustedCheck">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do
+                        </div>
+                        <div class="trustedCheck">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do
+                        </div>
+                    </div>
+                </div>
+
             </article>
             <article id="services">
-                <header id="title">Our Best Services <br> We are Travel Agent</header>
-                <div id="col-left"></div>
-                <div id="col-right"></div>
+                <h1 style="text-align: center;">Our Best Services <br> We are Travel Agent</h1>
+                <div id="col-left">
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Lorem Ipsum Dolor Sit</h4> <br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing
+                            elit, sed do eiusmod.
+                        </div>
+                        <div>
+                            <h4>Lorem Ipsum Dolor Sit</h4> <br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing
+                            elit, sed do eiusmod.
+                        </div>
+                        <div>
+                            <h4>Lorem Ipsum Dolor Sit</h4> <br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing
+                            elit, sed do eiusmod.
+                        </div>
+                    </div>
+                </div>
+                <div id="col-right">
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Lorem Ipsum Dolor Sit</h4> <br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing
+                            elit, sed do eiusmod.
+                        </div>
+                        <div>
+                            <h4>Lorem Ipsum Dolor Sit</h4> <br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing
+                            elit, sed do eiusmod.
+                        </div>
+                        <div>
+                            <h4>Lorem Ipsum Dolor Sit</h4> <br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing
+                            elit, sed do eiusmod.
+                        </div>
+                    </div>
+                </div>
             </article>
             <article id="budget_package">
                 <div id="packages">
-                    <div id="high_budget"></div>
-                    <div id="mid_budget"></div>
-                    <div id="low_budget"></div>
-                    <!-- <div id="rectangle"></div> -->
-                </div>               
+                    <h1>Trusted Since 2001 <br> We are Travel Agent</h1>
+                    <div>
+                        <div id="high_budget"></div>
+                        <div id="mid_budget"></div>
+                        <div id="low_budget"></div>
+                    </div>
+                </div>
             </article>
             <article>
 
             </article>
         </main>
+        <section id="go_exploore"></section>
+        <section id="pack_and_go">
+            <h2>Pack and Go <br> Awesome Tours</h2>
+            <ul>
+                <li>
+                    <img src="img/pack_and_go1.png" alt="">
+                    <span>7 Day + 6 Night</span>
+                    <span class="cities">New York + Paris</span>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                    <span class="price">&dollar;600</span>
+                    <a href="" class="btn" title="Book Now">Book Now</a>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/pack_and_go1.png" alt="">
+                        <span>7 Day + 6 Night</span>
+                        <span class="cities">New York + Paris</span>
+                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                        <span class="price">&dollar;600</span>
+                        <a href="" class="btn" title="Book Now">Book Now</a>
+                    </div>
+                </li>
+                <li><img src="img/pack_and_go1.png" alt="">
+                    <span>7 Day + 6 Night</span>
+                    <span class="cities">New York + Paris</span>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                    <span class="price">&dollar;600</span>
+                    <a href="" class="btn" title="Book Now">Book Now</a></li>
+            </ul>
+        </section>
+
+        <section id="package">
+
+        </section>
+        <section id="costumer_reviews">
+
+        </section>
+        <div id="test"></div>
+        <section id="socials">
+            <!-- wijzig naar ul en li voor een beter result -->
+            <div id="info">
+                <div id="email">
+                    <img src="img/email.jpg" alt="">
+                    <div class="floatRight">
+                        EMAIL <br>
+                        free@psdfreebies.com <br> free@psdfreebies.com
+                    </div>
+                </div>
+                <div id="call_us">
+                    <img src="img/phone.jpg" alt="">
+                    <div class="floatRight">
+                        CALL US ! <br>
+                        +123 456 7890 <br> +123 456 7890
+                    </div>
+                </div>
+                <div id="address">
+                    <img src="img/adress.jpg" alt="">
+                    <div class="floatRight">
+                        ADDRESS <br>
+                        123, Main Road, New City, <br> My Country 123456
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-google-plus-g"></i></li>
+                <li><i class="fab fa-vk"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-linkedin-in"></i></li>
+                <li><i class="fab fa-digg"></i></li>
+                <li><i class="fab fa-deviantart"></i></li>
+            </ul>
+        </section>
+        <footer>
+            Copyright 2019, All Rights Reserved
+        </footer>
     </div>
 
 
@@ -86,7 +304,7 @@
 
     </div>
     <!-- Add your site or application content here -->
-
+    <script src="https://kit.fontawesome.com/22b5156360.js" crossorigin="anonymous"></script>
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
